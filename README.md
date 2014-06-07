@@ -1,4 +1,4 @@
 RDD-experiments
 ===============
 
-Trying out mattieu's RDD package
+Trying out Matthieu's RDD package
