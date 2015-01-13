@@ -2,10 +2,13 @@
 # Bastiaan Quast
 # bquast@gmail.com
 
+# load the RDD package
+library(rdd)
+
 require("foreign") #For Stata data
 require("dummies")
 
-setwd("C:/Users/drewdim/Dropbox/rd/paper/dalbodalbo")
+# setwd("C:/Users/drewdim/Dropbox/rd/paper/dalbodalbo")
 d<-read.dta("PoliticalDynastiesData.dta")
 
 #Set up data as per ``Political Dynasties''
@@ -76,5 +79,5 @@ dev.off()
 
 pdf("PD_example_3.pdf",width=7.5,height=5)
 DCdensity(d$marginvote[sub])
-title(xlab="Vote Margin (%)",ylab=''Density'')
+title(xlab="Vote Margin (%)",ylab="Density")
 dev.off()
